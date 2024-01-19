@@ -12,9 +12,12 @@ import { TestComponent } from './test/test.component';
   ],
   imports: [
     BrowserModule,
+    // AppComponent,
+    // TestComponent
     
     // Add other modules if any
   ],
   bootstrap: [AppComponent],
+  // bootstrap: []
 })
 export class AppModule { }

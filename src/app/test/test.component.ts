@@ -1,20 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: '[app-test]',
+  selector: 'app-test',
   standalone: true,
   imports: [],
-  // templateUrl: './test.component.html',
-  // template: '<div>Inline tmplate</div>',
-  template: `<div>
-  Inline tmplate
-  </div>`,
+  template:`<h2>{{"Hello " + parentData}}</h2>`,
+  
   // styleUrls: ['./test.component.css']
   // styleUrl: './test.component.css'
   styles:[`div{
     color:red;
   }`]
 })
-export class TestComponent {
+export class TestComponent implements OnInit {
+
+  // the same parentData which app.component.html is sending
+  @Input() public parentData: any;
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+  }
 
 }

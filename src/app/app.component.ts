@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TestComponent } from './test/test.component';
+// import {AppComponent} from './app/app.component';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,7 @@ import { TestComponent } from './test/test.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hello-world';
+  title = 'app';
+  // Component interaction
+  public name = "Mahabir";
 }
