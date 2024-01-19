@@ -15,4 +15,5 @@ export class AppComponent {
   title = 'app';
   // Component interaction
   public name = "Mahabir";
+  public message = "";
 }
